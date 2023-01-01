@@ -1,0 +1,11 @@
+.box {
+  width: 400px;
+  height: 400px;
+  background: coral;
+  padding: 16px;
+}
+
+.child {
+  background: royalblue;
+  width: 50%;
+}
