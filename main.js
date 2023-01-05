@@ -31,4 +31,15 @@ document.getElementById("username").addEventListener("focus", function (event) {
   console.log("focus event happened");
 });
 
-//
+//event are captured
+document.querySelector(".parent").addEventListener("click", function () {
+  console.log("parent clicked");
+});
+
+document.querySelector(".child").addEventListener("click", function () {
+  console.log("child clicked");
+});
+
+document.getElementById("subchild").addEventListener("click", function () {
+  console.log("subchild clicked");
+});
