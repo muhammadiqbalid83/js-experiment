@@ -5,6 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Speceficity & Semantic HTML</title>
+    <style>
+      #id-level {
+        color: palevioletred;
+      }
+      .class-level {
+        color: coral;
+      }
+      p {
+        color: aquamarine;
+      }
+
+      .box {
+        width: 400px;
+        height: 400px;
+        padding: 16px;
+        background-color: coral;
+      }
+
+      .child {
+        box-sizing: border-box;
+        width: 100%;
+        background-color: royalblue;
+      }
+
+      p#id-level {
+        color: palevioletred;
+        /* position: relative; */
+      }
+
+      strong {
+        color: red;
+        position: absolute;
+        /* top: -10px; */
+      }
+
+      p.absolute {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        border: 1px solid red;
+      }
+
+      section {
+        position: relative;
+        border: 1px solid blue;
+        width: 200px;
+        height: 200px;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <!-- <p id="id-level" class="class-level">
+      this is <strong>para</strong> for testing
+    </p> -->
+
+    <section>
+      <p class="absolute">absolute positioned para</p>
+    </section>
+    <!-- <div class="box">
+      <div class="box child"></div>
+    </div> -->
+  </body>
 </html>
